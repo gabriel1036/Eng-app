@@ -1,0 +1,14 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+        ipa: ['"Noto Sans"', '"Segoe UI"', 'Charis SIL', 'Gentium Plus', 'serif'],
+      },
+    },
+  },
+  plugins: [],
+};
