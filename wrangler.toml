@@ -1,0 +1,4 @@
+# Cloudflare Pages project configuration (used by `npm run deploy`).
+name = "vocab-memory"
+pages_build_output_dir = "./dist"
+compatibility_date = "2025-01-01"

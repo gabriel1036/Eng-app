@@ -1,0 +1,1 @@
+../../.agents/rules/reconcile-prior-session-work.md

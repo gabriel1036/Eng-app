@@ -55,3 +55,16 @@ A device that signs in never seeds the sample data until it has pulled the cloud
 
 Data from the first release (database `vocab-memory`, numeric ids) is copied once into `vocab-memory-v2` on first start
 (old database is left untouched). Backups from the first release can still be imported.
+
+## Deploy to Cloudflare Pages
+
+**Option 1 — Git integration (recommended):** Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git.
+Framework preset *None*; build command `npm run build`; output directory `dist`; environment variables:
+`NODE_VERSION=20` and (for sync) `VITE_DEXIE_CLOUD_URL=https://<id>.dexie.cloud`.
+Then `npx dexie-cloud whitelist https://<project>.pages.dev`.
+
+**Option 2 — CLI:** `npx wrangler login` once, then `VITE_DEXIE_CLOUD_URL=https://<id>.dexie.cloud npm run deploy`
+(the first run creates the Pages project `vocab-memory`; change the name in `wrangler.toml` and `package.json` if taken).
+
+`public/_headers` sets cache rules (service worker and manifest are always revalidated, hashed assets are immutable).
+`dexie-cloud.key` and `.env.local` are git-ignored — never upload them.

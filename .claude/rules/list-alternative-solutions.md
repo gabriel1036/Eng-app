@@ -1,0 +1,1 @@
+../../.agents/rules/list-alternative-solutions.md

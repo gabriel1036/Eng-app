@@ -1,0 +1,1 @@
+../../.agents/rules/read-md-before-code-changes.md

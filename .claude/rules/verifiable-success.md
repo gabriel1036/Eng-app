@@ -1,0 +1,1 @@
+../../.agents/rules/verifiable-success.md

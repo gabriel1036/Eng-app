@@ -1,0 +1,1 @@
+../../.agents/rules/optimize-by-layer.md

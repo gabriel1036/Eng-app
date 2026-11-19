@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "seed": "node scripts/build-seed.mjs"
+    "seed": "node scripts/build-seed.mjs",
+    "deploy": "vite build && wrangler pages deploy dist --project-name vocab-memory"
   },
   "dependencies": {
     "dexie": "^4.4.7",
@@ -28,6 +29,7 @@
     "vite-plugin-pwa": "^2.0.0",
     "vitest": "^4.1.12",
     "workbox-build": "^7.4.1",
-    "workbox-window": "^7.4.1"
+    "workbox-window": "^7.4.1",
+    "wrangler": "^4.86.0"
   }
 }
