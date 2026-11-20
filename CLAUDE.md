@@ -10,7 +10,7 @@ npm run build                        # production build + PWA service worker int
 npm test                             # vitest run (node environment, tests/lib.test.js)
 npx vitest run -t "<test name>"      # single test
 npm run seed                         # regenerate public/seed.json from sample/vocab.pdf
-npm run deploy                       # build + wrangler pages deploy (Cloudflare Pages, project vocab-memory)
+npm run deploy                       # build + wrangler pages deploy (Cloudflare Pages, project eng-app)
 ```
 
 No linter is configured. Node 20 (`.node-version`).

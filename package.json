@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "seed": "node scripts/build-seed.mjs",
-    "deploy": "vite build && wrangler pages deploy dist --project-name vocab-memory"
+    "deploy": "vite build && wrangler pages deploy dist --project-name eng-app"
   },
   "dependencies": {
     "dexie": "^4.4.7",

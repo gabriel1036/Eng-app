@@ -64,7 +64,7 @@ Framework preset *None*; build command `npm run build`; output directory `dist`;
 Then `npx dexie-cloud whitelist https://<project>.pages.dev`.
 
 **Option 2 — CLI:** `npx wrangler login` once, then `VITE_DEXIE_CLOUD_URL=https://<id>.dexie.cloud npm run deploy`
-(the first run creates the Pages project `vocab-memory`; change the name in `wrangler.toml` and `package.json` if taken).
+(the first run creates the Pages project `eng-app`; change the name in `wrangler.toml` and `package.json` if taken).
 
 `public/_headers` sets cache rules (service worker and manifest are always revalidated, hashed assets are immutable).
 `dexie-cloud.key` and `.env.local` are git-ignored — never upload them.
