@@ -92,6 +92,7 @@ export default function StudyView({ initialScope, go }) {
           <div className="mt-4 flex justify-center gap-2">
             <button className="btn-outline" onClick={() => setSession(null)}>Back</button>
             {session.scope.type === 'chunk' && <button className="btn-primary" onClick={() => setSession({ ...session, list: words.slice(session.scope.index * size, session.scope.index * size + size) })}>Practice this set anyway</button>}
+            {session.scope.type === 'topic' && <button className="btn-primary" onClick={() => setSession({ ...session, list: words.filter((w) => w.topicIds.includes(session.scope.id)) })}>Practice this topic anyway</button>}
           </div>
         </Empty>
       );
